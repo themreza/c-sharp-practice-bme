@@ -32,6 +32,17 @@ namespace Class_2
             return a;
         }
 
+        static int plus(int a, int b)
+        {
+            return a + b;
+        }
+
+        static void prnt(int c)
+        {
+            Console.WriteLine("A+B={0}", c);
+            Console.ReadLine();
+        }
+
         static void Main(string[] args)
         {
             int a = 0, b = 0, c;
@@ -40,10 +51,8 @@ namespace Class_2
             //ReadVar2("B=", ref b);
             a = ReadVar3("A=");
             b = ReadVar3("B=");
-            c = a + b;
-            Console.WriteLine("A+B={0}", c);
-      
-            Console.ReadLine();
+            c = plus(a, b);
+            prnt(c);
         }
     }
 }
